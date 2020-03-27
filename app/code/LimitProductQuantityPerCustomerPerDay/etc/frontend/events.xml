@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="checkout_cart_update_items_after">
+        <observer name="ns_check_quantity" instance="NSTech\LimitProductQuantityPerCustomerPerDay\Observer\CheckQuantity" />
+    </event>
+     <event name="checkout_cart_product_add_after">
+        <observer name="ns_check_quantity" instance="NSTech\LimitProductQuantityPerCustomerPerDay\Observer\CheckQuantity" />
+    </event>
+ 
+    
+</config>
